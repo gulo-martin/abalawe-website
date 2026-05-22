@@ -1,6 +1,5 @@
 import React from 'react'
 
-import TImage from "../../public/images/1bd62f60f9ce82763172b9dccf580dae.png";
 import Image from 'next/image';
 
 function TesimonialCard() {
@@ -11,7 +10,7 @@ function TesimonialCard() {
         <div className=" absolute -bottom-30 left-[35%]      justify-center items-center text-white  flex flex-col">
        
             <div className="   bg-white border-4  w-30 h-30 rounded-full shadow flex justify-center items-center text-white font-bold contain-content">
-                <Image src={TImage} className=" w-full h-full object-cover" alt="image"/>
+                <Image src="/images/1bd62f60f9ce82763172b9dccf580dae.png" className=" w-full h-full object-cover" alt="image" width={120} height={120}/>
             </div>
 
             <h1 className="text-black font-bold">Favour Maneno</h1>

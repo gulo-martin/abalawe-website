@@ -1,6 +1,5 @@
 import React from 'react'
 
-import BgImage from "../../public/images/shahid-mehmood-0KgJaDiOS7c-unsplash.png";
 import Image from 'next/image';
 import { Send } from 'lucide-react';
 
@@ -10,7 +9,7 @@ function Contact() {
         <div className="main max-w-7xl w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3">
 
             <div className="left h-full w-full md:col-span-2">
-                <Image src={BgImage} className=" w-full h-full object-cover" alt="constct image"/>
+                <Image src="/images/shahid-mehmood-0KgJaDiOS7c-unsplash.png" className=" w-full h-full object-cover" alt="constct image" width={1200} height={800}/>
             </div>
 
             <div className="right flex flex-col items-center justify-center">

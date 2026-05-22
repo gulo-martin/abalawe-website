@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Logo from "../../public/images/FB_IMG_1779445211008.jpg"
 import Image from 'next/image';
 import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa';
 import { BsWhatsapp } from 'react-icons/bs';
@@ -14,7 +13,7 @@ function Footer() {
 
           <div className="flex flex-col p-2">
               <div className="header flex flex-row gap-2 items-center">
-                <Image src={Logo} className=" w-10" alt="logo"/>
+                <Image src="/images/FB_IMG_1779445211008.jpg" className=" w-10" alt="logo" width={40} height={40}/>
                 <h1 className=" font-bold">Abalawe Online Store</h1>
               </div>
               <p className=" text-[10px] mt-2 leading-6">Trusted for quality products and friendly support. Contact us for any questions or assistance.</p>

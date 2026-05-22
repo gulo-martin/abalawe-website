@@ -1,6 +1,5 @@
 import React from 'react'
 
-import BgImage from "../../public/images/shahid-mehmood-0KgJaDiOS7c-unsplash.png";
 import Image from 'next/image';
 import { Send } from 'lucide-react';
 import TestimonialCard from './TesimonialCard'
