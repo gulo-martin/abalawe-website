@@ -9,16 +9,16 @@ import { MdEmail } from 'react-icons/md';
 function Footer() {
   return (
     <div className=" bg-white h-full w-full text-black">
-      <div className="inner grid grid-cols-1 md:grid-cols-4 p-4 mx-auto max-w-7xl my-3">
+      <div className="inner grid grid-cols-1 md:grid-cols-4 p-4 mx-auto max-w-7xl my-3 gap-10">
 
           <div className="flex flex-col p-2">
               <div className="header flex flex-row gap-2 items-center">
                 <Image src="/images/FB_IMG_1779445211008.jpg" className=" w-10" alt="logo" width={40} height={40}/>
                 <h1 className=" font-bold">Abalawe Online Store</h1>
               </div>
-              <p className=" text-[10px] mt-2 leading-6">Trusted for quality products and friendly support. Contact us for any questions or assistance.</p>
+              <p className=" text-[13px] mt-2 leading-6">Trusted for quality products and friendly support. Contact us for any questions or assistance.</p>
 
-              <div className="socials flex gap-3 text-3xl flex-row mt-3 items-center">
+              <div className="socials flex gap-3 text-3xl flex-row mt-5 items-center">
                 <FaFacebook className=" text-blue-600"/>
                 <FaWhatsapp className=" text-green-600"/>
                 <FaTiktok className=" text-black-600"/>

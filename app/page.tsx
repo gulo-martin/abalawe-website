@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Contact from "./components/Contact";
 import Testimonials from "./components/Testimonials";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
               <p className=" mt-3 ">Welcome to Abalawe Online Store — your destination for quality products and dependable service. We carefully select items you'll love, offer competitive prices, and provide fast, reliable shipping.</p>
 
               <div className="nutton mt-5 ">
-                <button className=" bg-linear-to-r from-green-600 hover:from-green-700 to-green-700 p-3 px-20 cursor-pointer rounded-full">Get in touch</button>
+                <a href="#contact" className=" bg-linear-to-r from-green-600 hover:from-green-700 to-green-700 p-3 px-20 cursor-pointer rounded-full">Get in touch</a>
               </div>
 
 
@@ -45,7 +46,7 @@ export default function Home() {
         <Testimonials/>
         
         {/* contact */}
-        <Contact/>
+        <div id="contact" className="contact"> <Contact/>  </div>
     
     </div>
   );
