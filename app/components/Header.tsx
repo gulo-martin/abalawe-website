@@ -4,7 +4,6 @@ import Link from 'next/link';
 import React, { useState } from 'react'
 import "../globals.css";
 
-import Logo from "../../public/images/FB_IMG_1779445211008.jpg";
 import Image from 'next/image';
 import { ArrowBigDown, ArrowDown, ArrowDownCircle, ArrowUpCircle, Menu, XCircle } from 'lucide-react';
 import { BiMenu } from 'react-icons/bi';
@@ -21,7 +20,7 @@ function Header() {
         <div className="header relative flex justify-between items-center max-w-7xl w-[90%] mx-auto p-2 bg-white dark:bg-black/80 backdrop-blur-2xl rounded-full border border-gray-700/50">
 
             <Link href={'/'} className=" text-black dark:text-white flex flex-row gap-2 items-center">
-                <Image src={Logo} className=" w-10 rounded-full" alt="logo"/>
+                <Image src="/images/FB_IMG_1779445211008.jpg" className=" w-10 rounded-full" alt="logo" width={40} height={40}/>
                 <h1 className=" font-bold">Abalawe</h1>
             </Link>
             <nav className="nav-section flex text-black dark:text-white flex-row items-center gap-4 text-sm">

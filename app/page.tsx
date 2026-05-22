@@ -1,7 +1,4 @@
 
-
-import Logo from "../public/images/FB_IMG_1779445211008.jpg"
-import BgImage from "../public/images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg"
 import Image from "next/image";
 import Contact from "./components/Contact";
 import Testimonials from "./components/Testimonials";
@@ -14,7 +11,7 @@ export default function Home() {
         <div className="home-section relative contain-content flex justify-center items-center flex-col bg-black h-[90vh] w-full z-10">
 
           <div className="bg-image absolute top-0 left-0 z-0 w-full h-full">
-            <Image src={BgImage} className=" w-full h-full object-cover" alt="background image"/>
+            <Image src="/images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg" className=" w-full h-full object-cover" alt="background image" width={1920} height={1080}/>
           </div>
 
           <div className=" absolute left-0 top-0 w-full h-full inset-0 bg-linear-to-r from-black to-black/50"></div>
@@ -22,7 +19,7 @@ export default function Home() {
           <div className="details z-20 p-7 grid md:grid-cols-3 gap-4 mx-auto max-w-7xl flex-row text-white">
 
             <div className="home-image2  justify-start items-start">
-              <Image src={Logo} className=" w-[50%] rounded-full" alt="logo"/>
+              <Image src="/images/FB_IMG_1779445211008.jpg" className=" w-[50%] rounded-full" alt="logo" width={500} height={500}/>
             </div>
             
             <div className="left col-span-2 flex justify-center items-start flex-col">
@@ -37,7 +34,7 @@ export default function Home() {
             </div>
 
             <div className="home-image flex justify-center items-center">
-              <Image src={Logo} className=" w-[80%] rounded-full" alt="logo"/>
+              <Image src="/images/FB_IMG_1779445211008.jpg" className=" w-[80%] rounded-full" alt="logo" width={500} height={500}/>
             </div>
 
           </div>
