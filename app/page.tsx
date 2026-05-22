@@ -2,11 +2,12 @@
 import Image from "next/image";
 import Contact from "./components/Contact";
 import Testimonials from "./components/Testimonials";
+import Team from "./components/Team";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-start  bg-zinc-50 font-sans relative">
+    <div className="flex flex-col items-center justify-start  bg-white font-sans relative">
        
         {/* home-page */}
         <div className="home-section relative contain-content flex justify-center items-center flex-col bg-black h-[90vh] w-full z-10">
@@ -42,8 +43,11 @@ export default function Home() {
 
         </div>
 
+       
         {/* testimonials */}
         <Testimonials/>
+
+        <Team/>
         
         {/* contact */}
         <div id="contact" className="contact"> <Contact/>  </div>
