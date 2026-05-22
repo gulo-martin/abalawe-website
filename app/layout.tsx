@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Poppins, Noto_Sans_JP } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsappBtn from "./components/WhatsappBtn";
 
+const poppins = Poppins({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], display: "swap" });
+const notoSansJP = Noto_Sans_JP({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], display: "swap" });
+
 export const metadata: Metadata = {
   title: "Abalawe online website",
-  description: "Abalawe online store",
+  description: "abalawe online store",
 };
 
 export default function RootLayout({
@@ -15,22 +19,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={` h-full `}
-    >
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></link>
-      </head>
-      
+    <html lang="en" className={`h-full ${poppins.className} ${notoSansJP.className}`}>
       <body className="min-h-full flex flex-col">
-        <Header/>
-        <WhatsappBtn/>
-        {children}
-        <Footer/>
-        </body>
+        <Header />
+        <WhatsappBtn />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
