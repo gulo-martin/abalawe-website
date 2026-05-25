@@ -4,6 +4,12 @@ import Contact from "./components/Contact";
 import Testimonials from "./components/Testimonials";
 import Team from "./components/Team";
 import Link from "next/link";
+import QrCode from "./components/QrCode";
+import Products from "./components/Products";
+import { GiBuyCard } from 'react-icons/gi';
+import About from "./components/About";
+
+
 
 export default function Home() {
   return (
@@ -29,7 +35,7 @@ export default function Home() {
               <p className=" mt-3 ">Welcome to Abalawe Online Store — your destination for quality products and dependable service. We carefully select items you'll love, offer competitive prices, and provide fast, reliable shipping.</p>
 
               <div className="nutton mt-5 ">
-                <a href="#contact" className=" bg-linear-to-r from-green-600 hover:from-green-700 to-green-700 p-3 px-20 cursor-pointer rounded-full">Get in touch</a>
+                <Link href="#contact" className=" bg-linear-to-r from-green-600 hover:from-green-700 to-green-700 p-3 px-20 cursor-pointer rounded-full flex items-center gap-3">Get in touch <GiBuyCard className=" text-2xl"/> </Link>
               </div>
 
 
@@ -43,14 +49,18 @@ export default function Home() {
 
         </div>
 
+        <div id="products"> <Products/> </div>
+        <QrCode/>
        
         {/* testimonials */}
         <Testimonials/>
 
-        <Team/>
+        {/* <Team/> */}
         
         {/* contact */}
         <div id="contact" className="contact"> <Contact/>  </div>
+
+        <About/>
     
     </div>
   );

@@ -5,8 +5,11 @@ import { Send } from 'lucide-react';
 
 function Contact() {
   return (
-    <div className="bg-white w-full min-h-screen">
-        <div className="main max-w-7xl w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3">
+    <div className="bg-white w-full overflow-x-hidden min-h-screen relative">
+        <div className=" w-50 h-50 rounded-full absolute -top-20 -right-20 bg-green-600 z-0"></div>
+
+        
+        <div className="main z-30 max-w-7xl w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3">
 
             <div className="left h-full w-full md:col-span-2">
                 <Image src="/images/shahid-mehmood-0KgJaDiOS7c-unsplash.png" className=" w-full h-full object-cover" alt="constct image" width={1200} height={800}/>
@@ -27,6 +30,7 @@ function Contact() {
             </div>
 
         </div>
+
     </div>
   )
 }
