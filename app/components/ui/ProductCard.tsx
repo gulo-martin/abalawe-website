@@ -17,9 +17,9 @@ interface ProductCard {
 
 function ProductCard( {image, title, price, description} : ProductCard ) {
   return (
-    <div className=" flex flex-col relative h-[50vh] w-[350px] md:w-[300px] rounded-3xl contain-content">
-        <div className="_image  top-0 left-0 z-0 h-full w-full">
-            <Image className=" w-full h-full object-cover scale-110" src={image}  alt={title}/>
+    <div className=" flex flex-col relative md:h-[50vh]  w-[100%] rounded-3xl contain-content">
+        <div className="_image  top-0 left-0 z-0 h-[65vh]  w-full">
+            <Image className=" w-full h-full object-cover scale-125" src={image}  alt={title}/>
         </div>
 
         <div className="bg-linear-to-t from-black/70 absolute z-10 inset-0 top-0 left-0 h-full w-full"></div>
