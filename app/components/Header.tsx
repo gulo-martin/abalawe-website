@@ -28,9 +28,9 @@ function Header() {
                 <div onClick={() => setShow(!show)}  className=" flex gap-2 items-center relative cursor-pointer">Services 
                    {show && (
                      <div className="dropdown absolute w-[200px] top-10 p-4 left-0  bg-white grid grid-cols-1 text-black gap-4" >
-                        <p>Services</p> 
-                        <p>Services</p>
-                        <p>Services</p>
+                        <p>Team</p> 
+                        <p>code of conduct</p>
+                        <p>About Us</p>
                     </div>
                    )}
                 </div>

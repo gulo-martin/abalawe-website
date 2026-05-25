@@ -5,7 +5,7 @@ import { Send } from 'lucide-react';
 
 function Contact() {
   return (
-    <div className="bg-white w-full overflow-x-hidden min-h-screen relative">
+    <div className="bg-white w-full overflow-x-hidden min-h-screen relative py-10">
         <div className=" w-50 h-50 rounded-full absolute -top-20 -right-20 bg-green-600 z-0"></div>
 
         

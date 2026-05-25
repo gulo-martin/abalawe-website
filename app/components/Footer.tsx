@@ -18,7 +18,7 @@ function Footer() {
 
       <div className=" z-0 absolute left-0 top-0 w-full h-full inset-0 bg-linear-to-r from-black to-black/80"></div>
 
-      <div className=" 500 inner grid grid-cols-1 md:grid-cols-4 p-4 mx-auto max-w-7xl w-full my-3 gap-10 z-50 text-white">
+      <div className=" 500 inner grid grid-cols-1 md:grid-cols-4 p-4 mx-auto max-w-7xl w-full my-3 gap-10 z-10 text-white">
 
           <div className="flex flex-col p-2">
               <div className="header flex flex-row gap-2 items-center">

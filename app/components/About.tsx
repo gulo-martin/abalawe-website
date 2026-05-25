@@ -8,7 +8,7 @@ import { MdEmail } from 'react-icons/md';
 
 function About() {
   return (
-    <div className=" w-full min-h-screen flex justify-center items-center">
+    <div className=" w-full min-h-screen flex justify-center items-center py-10">
 
         <div className=" w-[90%] gap-5 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3">
 
@@ -31,12 +31,12 @@ function About() {
 
             </div>
 
-            <div className="list flex flex-col gap-3 text-[13px] mt-6">
+            {/* <div className="list flex flex-col gap-3 text-[13px] mt-6">
               <p className=" flex gap-2 items-center"><LocateIcon/> Mzuzu, luwinga</p>
               <p className=" flex gap-2 items-center"><MdEmail size={23}/> info@abalaweOnlinestore.com</p>
               <p className=" flex gap-2 items-center"><Phone size={23}/> +265 882 271 450</p>
 
-            </div>
+            </div> */}
           </div>
 
         </div>
