@@ -1,10 +1,11 @@
 "use client"
 import { LocateIcon, Phone } from 'lucide-react';
+import Image from 'next/image';
 import React from 'react'
 import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
-// import MAinVideo from "../"
+import MAinImage from "@/public/images/poster.jpg"
 
 function About() {
   return (
@@ -16,8 +17,8 @@ function About() {
             <h1 className=" text-5xl border-l-4 pl-4 border-green-500 font-bold mb-5">About us</h1>
           </div>
 
-          <div className=" w-full h-[50vh] md:h-full  md:col-span-2 contain-content rounded-2xl">
-            <video autoPlay muted loop controls src="/videos/brand.mp4" type="video/mp4" accentcolor="blue"  className=" w-full h-full object-cover"/>
+          <div className=" w-full h-[50vh] md:h-[70vh]  md:col-span-2 contain-content rounded-2xl">
+              <Image src={MAinImage} className=" w-full h-full object-cover relative top-0" alt="abalawe image"/>
           </div>
 
           <div className=" w-full p-4 tracking-wider flex flex-col">

@@ -1,20 +1,27 @@
+"use client"
 
 import Image from "next/image";
 import Contact from "./components/Contact";
 import Testimonials from "./components/Testimonials";
-import Team from "./components/Team";
 import Link from "next/link";
 import QrCode from "./components/QrCode";
 import Products from "./components/Products";
 import { GiBuyCard } from 'react-icons/gi';
 import About from "./components/About";
+import { useState } from "react";
+import Splash from "./components/Splash";
 
 
 
 export default function Home() {
+  
+  
+
+
   return (
     <div className="flex flex-col items-center justify-start  bg-white font-sans relative">
-       
+       {/* <Splash/> */}
+
         {/* home-page */}
         <div className="home-section relative contain-content flex justify-center items-center flex-col bg-black h-[90vh] w-full z-10">
 
@@ -30,12 +37,12 @@ export default function Home() {
               <Image src="/images/FB_IMG_1779445211008.jpg" className=" w-[50%] rounded-full" alt="logo" width={500} height={500}/>
             </div>
             
-            <div className="left col-span-2 flex justify-center items-start flex-col">
+            <div className="home-details col-span-2 flex justify-center items-start flex-col">
               <h1 className=" text-3xl md:text-7xl font-bold">Abalawe online store</h1>
               <p className=" mt-3 ">Welcome to Abalawe Online Store — your destination for quality products and dependable service. We carefully select items you'll love, offer competitive prices, and provide fast, reliable shipping.</p>
 
               <div className="nutton mt-5 ">
-                <Link href="#contact" className=" bg-linear-to-r from-green-600 hover:from-green-700 to-green-700 p-3 px-20 cursor-pointer rounded-full flex items-center gap-3">Get in touch <GiBuyCard className=" text-2xl"/> </Link>
+                <Link href="#contact" className=" bg-linear-to-r from-[#033C20] hover:from-[#056133] to-[#034727] p-3 px-20 cursor-pointer rounded-full flex items-center gap-3">Get in touch <GiBuyCard className=" text-2xl"/> </Link>
               </div>
 
 
@@ -58,7 +65,7 @@ export default function Home() {
         {/* <Team/> */}
         
         {/* contact */}
-        <div id="contact" className="contact"> <Contact/>  </div>
+        <div id="contact" className="contact "> <Contact/>  </div>
 
         <About/>
     

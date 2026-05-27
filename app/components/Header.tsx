@@ -9,6 +9,9 @@ import { GiBuyCard } from 'react-icons/gi';
 
 import { ArrowBigDown, ArrowDown, ArrowDownCircle, ArrowUpCircle, Menu, XCircle } from 'lucide-react';
 import { BiMenu } from 'react-icons/bi';
+import { FaTeamspeak } from 'react-icons/fa';
+import { FaProductHunt } from 'react-icons/fa6';
+import { FcAbout } from 'react-icons/fc';
 
 function Header() {
     const [show, setShow] = useState<boolean>(false)
@@ -43,15 +46,32 @@ function Header() {
 
             {show3 ? ( <XCircle onClick={() => setShow3(!show3)} className="menu text-black dark:text-white text-3xl active:bg-black/10 rounded-full transition-all ease-in-out mr-1"/>) : (<BiMenu onClick={() => setShow3(!show3)} className="menu text-black dark:text-white text-3xl active:bg-black/10 rounded-full transition-all ease-in-out mr-1"/>)}
 
-           {show3 && (
-             <nav className=" absolute bg-white/0 gap-3 backdrop-blur-sm w-full top-17 rounded shadow flex flex-col ease-in-out transition-all">
-                <Link href={'/'} className="p-4 w-full text-left border-l-4 border-green-500 bg-zinc-50" >Home</Link>
-                <Link href={'/team'} className="p-4 w-full text-left border-l-4 border-green-500 bg-zinc-50" >Team</Link>
-                <Link href={'/about'} className="p-4 w-full text-left border-l-4 border-green-500 bg-zinc-50" >About</Link>
-            </nav>
-           )}
+           
 
         </div>
+
+
+        {show3 && (
+            <nav onClick={() => setShow3(!show3)} className=" fixed duration-200    gap-0 backdrop-blur-sm w-[100%] h-screen top-0 rounded shadow flex flex-col ease-in-out transition-all">
+                <nav className=" fixed duration-200 z-20   bg-[#BBE1BB] gap-0 backdrop-blur-2xl w-[70%] h-screen top-0 rounded shadow flex flex-col ease-in-out transition-all">
+                    <div className="main-box flex-1">
+                            <div className="bg-[#033C20] h-30 w-full flex justify-start px-5 items-center">
+                                <Image src="/images/FB_IMG_1779445211008.jpg" className=" w-20 rounded-full" alt="logo" width={70} height={70}/>
+
+                            </div>
+                            <div className="main flex flex-col gap-2 mt-2 px-1">
+                                <Link href={'/team'} className="p-4 bg-white w-full text-left border-l-4 border-green-500 flex justify-between items-center" >Team <FaTeamspeak size={20}/></Link>
+                                <Link href={'/products'} className="p-4 w-full text-left border-l-4 border-green-500 bg-white flex justify-between items-center" >Products <FaProductHunt size={20}/> </Link>
+                                <Link href={'/about'} className="p-4 w-full text-left border-l-4 border-green-500 bg-white flex justify-between items-center" >About <FcAbout size={20}/></Link>
+                            </div>
+                    </div>
+
+                    <div className=" h-10 bg-white w-full text-[10px] flex justify-center items-center">
+                        &copy; {new Date().getFullYear()} Abalawe online store
+                    </div>
+                </nav>
+            </nav>
+           )}
 
     </div>
   )

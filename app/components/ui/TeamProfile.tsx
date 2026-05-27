@@ -5,7 +5,7 @@ import Image from 'next/image';
 function TeamProfile() {
   return (
     <div className=" contain-content  w-[100%]   bg-white scale-90 md:scale-95 hover:scale-90 transition-all delay-100 ease-in-out select-none   shadow-sm rounded-2xl  relative">
-       <div className={" h-5 bg-green-200 w-full"}></div>
+       <div className={" h-5 bg-[#012b16] w-full"}></div>
         <div className=" w-full justify-center items-center text-white  flex flex-col p-5">
            
             <div className="   bg-white border-4  w-40 h-40 rounded-full shadow flex justify-center items-center text-white font-bold contain-content">
