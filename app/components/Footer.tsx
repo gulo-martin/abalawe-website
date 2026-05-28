@@ -1,12 +1,11 @@
 import React from 'react'
 
 import Image from 'next/image';
-import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa';
-import { BsWhatsapp } from 'react-icons/bs';
 import { LocateIcon, Phone } from 'lucide-react';
 import { MdEmail } from 'react-icons/md';
-import BgImage from "../../public/images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg"
+import BgImage from "../../public/images/bg/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg"
 import Link from 'next/link';
+import ContactDetails from './ui/ContactDetails';
 
 function Footer() {
   return (
@@ -28,10 +27,7 @@ function Footer() {
               <p className=" text-[13px] mt-2 leading-6">Trusted for quality products and friendly support. Contact us for any questions or assistance.</p>
 
               <div className="socials flex gap-3 text-3xl flex-row mt-5 items-center cursor-pointer">
-                <FaFacebook className=" text-blue-600"/>
-                <FaWhatsapp className=" text-green-600"/>
-                <FaTiktok className=" text-black-600"/>
-                <FaInstagram className=" text-pink-700" />
+               <ContactDetails/>
 
               </div>
           </div>
@@ -49,10 +45,11 @@ function Footer() {
 
           <div className="p-2">
             <h1 className=" font-bold mt-2">Our services</h1>
-            <div className="list flex flex-col gap-3 text-[13px] mt-3">
+            <div className="list capitalize flex flex-col gap-3 text-[13px] mt-3">
               <p>Business consulting</p>
               <p>Strategic Planning</p>
               <Link href={'/team'}>Team</Link>
+              <Link href={'/products'}>products</Link>
             </div>
           </div>
 
@@ -60,8 +57,8 @@ function Footer() {
             <h1 className=" font-bold mt-2">Contact us</h1>
             <div className="list flex flex-col gap-3 text-[13px] mt-3">
               <p className=" flex gap-2 items-center"><LocateIcon/> Mzuzu, luwinga</p>
-              <p className=" flex gap-2 items-center"><MdEmail size={23}/> info@abalaweOnlinestore.com</p>
-              <p className=" flex gap-2 items-center"><Phone size={23}/> +265 882 271 450</p>
+              <p className=" flex gap-2 items-center"><MdEmail size={23}/> vbalawe@gmail.com</p>
+              <p className=" flex gap-2 items-center"><Phone size={23}/> +265 999 597 215</p>
 
             </div>
           </div>

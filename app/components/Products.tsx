@@ -13,7 +13,7 @@ function Products() {
         <div className=" 2all grid grid-cols-1 flex-col h-full w-[100%]  mx-auto md:max-w-7xl ">
             <h1 className=" mt-10 text-4xl font-bold uppercase border-green-500 pl-2 border-l-4">Products</h1>
         
-            <div className="list  flex flex-col md:flex-row grid-cols-1 mt-10 gap-10 w-full md:gap-3 md:grid-cols-4 relative px-3">
+            <div className="list  flex flex-col md:flex-row grid-cols-1 mt-10 gap-10 w-full md:gap-3 md:grid-cols-4 relative px-4">
 
               {ProductsList.map((item,index) => (
                  <ProductCard key={index} image={item.image} available={item.available} title={item.name} price={item.price} description={item.description}/> 
@@ -24,7 +24,7 @@ function Products() {
 
             <div className=" p-4 w-full text-gray-500 mt-5 flex items-center gap-3">
               
-              <Link href={'#contact'} className=" flex gap-2 items-center"><PiArrowsMergeLight/>see all products </Link>
+              <Link href={'/products'} className=" flex gap-2 items-center"><PiArrowsMergeLight/>see all products </Link>
             </div>
         </div>
 

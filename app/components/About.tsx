@@ -1,11 +1,9 @@
 "use client"
-import { LocateIcon, Phone } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react'
-import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa';
-import { MdEmail } from 'react-icons/md';
 
 import MAinImage from "@/public/images/poster.jpg"
+import ContactDetails from './ui/ContactDetails';
 
 function About() {
   return (
@@ -24,20 +22,7 @@ function About() {
           <div className=" w-full p-4 tracking-wider flex flex-col">
             <h1 className=" text-3xl mb-4 font-bold">Abalawe online store</h1>
             <p className=" text-gray-600">Welcome to Abalawe Online Store — your destination for quality products and dependable service. We carefully select items you'll love, offer competitive prices, and provide fast, reliable shipping.</p>
-            <div className="socials flex gap-3 text-3xl flex-row mt-5 items-center cursor-pointer">
-              <FaFacebook className=" text-blue-600"/>
-              <FaWhatsapp className=" text-green-600"/>
-              <FaTiktok className=" text-black-600"/>
-              <FaInstagram className=" text-pink-700" />
 
-            </div>
-
-            {/* <div className="list flex flex-col gap-3 text-[13px] mt-6">
-              <p className=" flex gap-2 items-center"><LocateIcon/> Mzuzu, luwinga</p>
-              <p className=" flex gap-2 items-center"><MdEmail size={23}/> info@abalaweOnlinestore.com</p>
-              <p className=" flex gap-2 items-center"><Phone size={23}/> +265 882 271 450</p>
-
-            </div> */}
           </div>
 
         </div>

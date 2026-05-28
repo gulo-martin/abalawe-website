@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
-import Picture from "../../public/images/bien-arts-p_oUACmH9vQ-unsplash.jpg"
+import Picture from "../../public/images/team/519e168ba47fdd8eaae3ea3ed34d11ed.png"
 
 function Splash() {
   const [show, setShow] = useState<boolean>(true);

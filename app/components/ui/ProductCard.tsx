@@ -16,6 +16,9 @@ interface ProductCardProps {
  
 
 function ProductCard( {image, title, price, description, available} : ProductCardProps ) {
+    const message = `Hey! Abalawe online store. Is ${title} price: Mwk ${price} - available in store?`;
+    const phoneNumber = "+265999597215";
+
   return (
     <div className=" flex flex-col relative md:h-[50vh]  w-[100%] rounded-3xl contain-content">
         <div className="_image  top-0 left-0 z-0 h-[65vh]  w-full">
@@ -31,7 +34,7 @@ function ProductCard( {image, title, price, description, available} : ProductCar
             <p className=" text-sm mt-2 mb-4 tracking-wide"> <span className=" font-bold">MWK {price} </span> - {description}</p>
             
             {available ? (
-                <button disabled={!available} className=" w-full bg-white disabled:bg-amber-100 rounded-3xl contain-content"><Link href={'#contact'} className="  text-sm text-black border-2 border-gray-900/0  font-bold uppercase  p-3 w-[100%] text-center flex items-center justify-center  gap-4">Order now <GiBuyCard className=" text-black"/></Link></button>
+                <button disabled={!available} className=" w-full bg-white disabled:bg-amber-100 rounded-3xl contain-content"><Link href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} className="  text-sm text-black border-2 border-gray-900/0  font-bold uppercase  p-3 w-[100%] text-center flex items-center justify-center  gap-4">Order now <GiBuyCard className=" text-black"/></Link></button>
 
             ) : (
                 <button disabled={!available} className=" w-full bg-white disabled:bg-red-400 text-white rounded-3xl contain-content"><p  className="  text-sm text-white border-2 border-gray-900/0  font-bold uppercase  p-3 w-[100%] text-center flex items-center justify-center  gap-2">Sold <MdDangerous className=" text-white text-xl"/></p></button>
