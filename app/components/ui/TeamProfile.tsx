@@ -21,7 +21,7 @@ function TeamProfile({ image, name, location, position, description } : TeamProf
             </div>
 
             <h1 className="text-black font-bold mt-5 text-2xl">{name}</h1>
-            <p className="text-gray-700 font-bold">{location}</p>
+            <p className="text-gray-700 ">{location}</p>
             <p className="text-gray-500 font-bold">{position}</p>
             <p className="text-gray-500 text-center w-full text-sm">{description} </p>
          </div>

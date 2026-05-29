@@ -6,6 +6,9 @@
   --foreground: #171717;
 }
 
+/* .[#BBE1BB] primary */
+/* [#033C20] secondary */
+
 html, body {
   font-family: "Poppins", sans-serif;
 }
@@ -41,7 +44,7 @@ body {
 
 
   .home-details{
-    animation: fadeIn 1s linear;
+    animation: fadeIn 7s ease-out linear;
   }
 
   .team-card-animate {
@@ -51,9 +54,11 @@ body {
   @keyframes fadeIn {
     from{
       opacity: 0;
+       transform: translateY(20px);
     }
     to{
       opacity: 1;
+       transform: translateY(0);
     }
   }
 

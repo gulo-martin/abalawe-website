@@ -42,7 +42,7 @@ function Header() {
                 <Link href="/products"  className=" flex gap-2 items-center relative cursor-pointer">Products
                   
                 </Link>
-                <Link href="/contact" className={" bg-green-600 hover:bg-green-700 active:bg-green-800 transition-all  p-3 rounded-full gap-3 flex items-center border text-white border-green-600"}>Get in touch <GiBuyCard/></Link>
+                <Link href="/contact" className={" bg-[#056133] hover:bg-green-700 active:bg-green-800 transition-all  p-3 rounded-full gap-3 flex items-center border text-white border-green-600"}>Get in touch <GiBuyCard/></Link>
             </nav>
 
             {show3 ? ( <XCircle onClick={() => setShow3(!show3)} className="menu text-black dark:text-white text-3xl active:bg-black/10 rounded-full transition-all ease-in-out mr-1"/>) : (<BiMenu onClick={() => setShow3(!show3)} className="menu text-black dark:text-white text-3xl active:bg-black/10 rounded-full transition-all ease-in-out mr-1"/>)}
