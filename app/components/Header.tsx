@@ -21,7 +21,7 @@ function Header() {
   return (
     <div className=" w-full fixed top-5 z-50 ">
 
-        <div className="header relative flex justify-between items-center max-w-7xl w-[90%] mx-auto p-2 bg-white dark:bg-black/80 backdrop-blur-2xl rounded-full border border-gray-700/50">
+        <div className="header relative flex justify-between items-center max-w-7xl w-[90%] mx-auto p-2 bg-white dark:bg-black/80 backdrop-blur-2xl rounded-full border border-green-700/60">
 
             <Link href={'/'} className=" text-black dark:text-white flex flex-row gap-2 items-center">
                 <Image src="/images/FB_IMG_1779445211008.jpg" className=" w-10 rounded-full" alt="logo" width={40} height={40}/>
@@ -61,11 +61,11 @@ function Header() {
 
                             </div>
                             <div className="main flex flex-col gap-2 mt-2 px-1">
-                                <Link href={'/team'} className="p-4 bg-white w-full text-left border-l-4 border-green-500 flex justify-between items-center" >Team <FaTeamspeak size={20}/></Link>
-                                <Link href={'/products'} className="p-4 w-full text-left border-l-4 border-green-500 bg-white flex justify-between items-center" >Products <FaProductHunt size={20}/> </Link>
-                                <Link href={'/testimonials'} className="p-4 w-full text-left border-l-4 border-green-500 bg-white flex justify-between items-center" >Testimonials <UserCheck size={20}/> </Link>
+                                <Link href={'/team'} className="p-4  w-full text-left bg-linear-to-r from-[#056133] hover:from-[#036e39] hover:to-[#058143] to-[#034727]  text-white border border-green-500 flex justify-between items-center" >Team <FaTeamspeak size={20}/></Link>
+                                <Link href={'/products'} className="p-4 w-full text-left bg-linear-to-r from-[#056133] hover:from-[#036e39] hover:to-[#058143] to-[#034727] border border-green-500 text-white flex justify-between items-center" >Products <FaProductHunt size={20}/> </Link>
+                                <Link href={'/testimonials'} className="p-4 w-full text-left bg-linear-to-r from-[#056133] hover:from-[#036e39] hover:to-[#058143] to-[#034727] border border-green-500 text-white border border-green-500 bg-white flex justify-between items-center" >Testimonials <UserCheck size={20}/> </Link>
 
-                                <Link href={'/about'} className="p-4 w-full text-left border-l-4 border-green-500 bg-white flex justify-between items-center" >About <FcAbout size={20}/></Link>
+                                <Link href={'/about'} className="p-4 w-full text-left bg-linear-to-r from-[#056133] hover:from-[#036e39] hover:to-[#058143] to-[#034727] border border-green-500 text-white border border-green-500 bg-white flex justify-between items-center" >About <FcAbout size={20}/></Link>
                             </div>
                     </div>
 

@@ -8,17 +8,45 @@ import QrCode from "./components/QrCode";
 import Products from "./components/Products";
 import { GiBuyCard } from 'react-icons/gi';
 import About from "./components/About";
-import { useState } from "react";
+import { useEffect, useRef } from "react";
 import Splash from "./components/Splash";
 import { FastForward } from "lucide-react";
 import { MdFlashlightOn } from "react-icons/md";
 import { RiCheckboxMultipleBlankLine } from "react-icons/ri";
 
-
+import "./globals.css"
 
 export default function Home() {
-  
-  
+  const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    sectionRefs.current.forEach((section) => {
+      if (section) observer.observe(section);
+    });
+
+    return () => {
+      sectionRefs.current.forEach((section) => {
+        if (section) observer.unobserve(section);
+      });
+    };
+  }, []);
+
+  const setSectionRef = (index: number) => (el: HTMLDivElement | null) => {
+    sectionRefs.current[index] = el;
+  };
+
   return (
     <div className="flex flex-col items-center justify-start  bg-white font-sans relative">
        {/* <Splash/> */}
@@ -30,7 +58,15 @@ export default function Home() {
             <Image src="/images/bg/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg" className=" w-full h-full object-cover" alt="background image" width={1920} height={1080}/>
           </div>
 
-          <div className=" absolute left-0 top-0 w-full h-full inset-0 bg-linear-to-r from-black to-black/50"></div>
+          {/* bg + animation */}
+          <div className=" absolute p-4 flex justify-around left-0 top-0 w-full h-full inset-0 bg-linear-to-r from-black to-black/50">
+
+            <div className="bubble w-5 h-5 right-10 rounded-full bg-white/20"></div>
+            <div className="bubble2 w-5 h-5  rounded-full bg-white/10"></div>
+            <div className="bubble3 w-5 h-5 rounded-full bg-white/10"></div>
+            <div className="bubble w-5 h-5 rounded-full bg-white/20"></div>      
+
+          </div>
 
           <div className="details z-20 p-7 grid md:grid-cols-3 gap-4 mx-auto max-w-7xl flex-row text-white">
 
@@ -58,7 +94,7 @@ export default function Home() {
         </div>
 
         {/* cta */}
-        <div className="service bg-[#BBE1BB] py-15 md:py-10 w-[100%] max-x-7xl mx-auto flex justify-center items-center">
+        <div ref={setSectionRef(0)} className="service fade-section bg-[#BBE1BB] py-15 md:py-10 w-[100%] max-x-7xl mx-auto flex justify-center items-center">
             <div className="services w-[90%] mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-10">
 
                    
@@ -86,16 +122,16 @@ export default function Home() {
             </div>
         </div>
 
-        <div id="products"> <Products/> </div>
+        <div id="products" ref={setSectionRef(1)} className="fade-section"> <Products/> </div>
         <QrCode/>
        
         {/* testimonials */}
-        <Testimonials/>
+        <div ref={setSectionRef(2)} className="fade-section w-full"> <Testimonials/> </div>
 
         {/* <Team/> */}
         
         {/* contact */}
-        <div id="contact" className="contact "> <Contact/>  </div>
+        <div id="contact" className="contact fade-section" ref={setSectionRef(3)}> <Contact/>  </div>
 
         <About/>
     

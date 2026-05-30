@@ -57,8 +57,8 @@ function Footer() {
             <h1 className=" font-bold mt-2">Contact us</h1>
             <div className="list flex flex-col gap-3 text-[13px] mt-3">
               <p className=" flex gap-2 items-center"><LocateIcon/> Mzuzu, luwinga</p>
-              <p className=" flex gap-2 items-center"><MdEmail size={23}/> vbalawe@gmail.com</p>
-              <p className=" flex gap-2 items-center"><Phone size={23}/> +265 999 597 215</p>
+              <Link href={"mailto:vbalawe@gmail.com"}  className=" flex gap-2 items-center"><MdEmail size={23}/> vbalawe@gmail.com</Link>
+              <Link href={'tel:+265 999 597 215'} className=" flex gap-2 items-center"><Phone size={23}/> +265 999 597 215</Link>
 
             </div>
           </div>

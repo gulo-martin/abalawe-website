@@ -6,7 +6,7 @@ import Picture from "../../public/images/team/f41a27ce19b6cb91f3c2cf814c84845d.p
 function page() {
   return (
     <div className=" flex flex-col min-h-screen w-full">
-        <div className="top h-60">
+        <div className="top h-40">
           <Image src={Picture} className="w-full h-full object-cover" alt="image"/>
         </div>
         

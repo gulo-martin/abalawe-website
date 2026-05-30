@@ -15,12 +15,21 @@ function Team() {
             <h1 className=" text-4xl md:text-8xl font-bold text-black">Meet Our <span className=" text-[#033C20]">Team</span></h1>
             <p className=" text-sm md:text-md mt-4">Our team is dedicated to bringing you the best products, service, and support. Each member brings real expertise and a passion for making your online shopping experience smooth and enjoyable.</p>
             
-            <div className=" w-full grid grid-cols-1 mt-10 md:grid-cols-4 gap-3">
-
-              {MyTeam.map((item, id) => (
-                  <TeamProfile key={id} image={item.image} name={item.name} location={item.location} position={item.position} description={item.description}/>
-              ))}
-               
+            <div className="team w-full mt-10">
+              <div className="team-slider relative overflow-hidden">
+                <div className="team-slider-track flex flex-row gap-3 overflow-x-scroll">
+                  {[...MyTeam].map((item, id) => (
+                    <TeamProfile
+                      key={`${item.name}-${id}`}
+                      image={item.image}
+                      name={item.name}
+                      location={item.location}
+                      position={item.position}
+                      description={item.description}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
 
         </div>

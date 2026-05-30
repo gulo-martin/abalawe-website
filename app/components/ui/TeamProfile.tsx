@@ -12,7 +12,7 @@ interface TeamProfileProps {
 
 function TeamProfile({ image, name, location, position, description } : TeamProfileProps ) {
   return (
-    <div className=" contain-content  w-[100%]   bg-white scale-90 md:scale-95 hover:scale-90 transition-all delay-100 ease-in-out select-none   shadow-sm rounded-2xl  relative team-card-animate">
+    <div className="contain-content  min-w-[290px] w-full bg-white scale-90 md:scale-95 hover:scale-90 transition-all delay-100 ease-in-out select-none shadow-xl rounded-2xl relative team-card-animate">
        <div className={" h-5 bg-[#012b16] w-full"}></div>
         <div className=" w-full justify-center items-center text-white  flex flex-col p-5">
            
@@ -22,8 +22,8 @@ function TeamProfile({ image, name, location, position, description } : TeamProf
 
             <h1 className="text-black font-bold mt-5 text-2xl">{name}</h1>
             <p className="text-gray-700 ">{location}</p>
-            <p className="text-gray-500 font-bold">{position}</p>
-            <p className="text-gray-500 text-center w-full text-sm">{description} </p>
+            <p className="text-gray-500 font-bold my-2">{position}</p>
+            <p className="text-gray-500 text-center w-full text-sm mt-2">{description} </p>
          </div>
 
     </div>
