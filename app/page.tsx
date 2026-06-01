@@ -122,7 +122,10 @@ export default function Home() {
             </div>
         </div>
 
-        <div id="products" ref={setSectionRef(1)} className="fade-section"> <Products/> </div>
+        <div id="products" ref={setSectionRef(1)} className="fade-section w-full"> 
+          <Products/> 
+        </div>
+
         <QrCode/>
        
         {/* testimonials */}

@@ -8,12 +8,12 @@ import { ProductsList } from "@/app/data/products";
 
 function Products() {
   return (
-    <div className=" bg-white w-full min-h-screen flex justify-start py-10 items-center flex-col">
+    <div className="  w-[90%] mx-auto  min-h-screen flex justify-start py-10 items-start flex-col">
         
-        <div className=" 2all grid grid-cols-1 flex-col h-full w-[100%]  mx-auto md:max-w-7xl ">
+        <div className=" 2all  grid grid-cols-1 flex-col h-full w-full  mx-auto md:max-w-7xl ">
             <h1 className=" mt-10 text-4xl font-bold uppercase border-green-500 pl-2 border-l-4">Top Products</h1>
         
-            <div className="list  flex flex-col md:flex-row grid-cols-1 mt-10 gap-10 w-full md:gap-3 md:grid-cols-4 relative px-4">
+            <div className="list  grid grid-cols-1 mt-10 gap-y-10 gap-x-3 w-full md:gap-3 md:grid-cols-4 relative md:px-4">
 
               {ProductsList.map((item,index) => (
                  <ProductCard key={index} rate={item.rate} category={item.category} image={item.image} available={item.available} title={item.name} price={item.price} description={item.description}/> 

@@ -18,11 +18,11 @@ import teamImage4 from "@/public/images/team/1bd62f60f9ce82763172b9dccf580dae.pn
 export const MyTeam: teamProps[] = [
     {
         id: 1,
-        name: "Fortunate Banda",
-        description: "Creative graphic lead who brings visual stories to life across digital and print media.",
-        position: "Graphic Designer",
-        location: "Mzuzu, City Centre",
-        image: teamImage1,
+        name: "Victor Abalawe",
+        description: "Technology leader driving product innovation and smooth technical operations.",
+        position: "CEO",
+        location: "Mzuzu, Luwinga",
+        image: teamImage4,
     },
     {
         id: 2,
@@ -47,6 +47,14 @@ export const MyTeam: teamProps[] = [
         position: "CTO",
         location: "Mzuzu, Luwinga",
         image: teamImage4,
+    },
+    {
+        id: 5,
+        name: "Fortunate Banda",
+        description: "Creative graphic lead who brings visual stories to life across digital and print media.",
+        position: "Graphic Designer",
+        location: "Mzuzu, City Centre",
+        image: teamImage1,
     },
 
 ]

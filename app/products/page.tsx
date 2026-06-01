@@ -24,7 +24,7 @@ function page() {
 
           </div>
 
-          <div className="list grid grid-cols-1 mt-10 gap-10 w-[90%] mx-auto md:gap-3 md:grid-cols-4 relative px-0">
+          <div className="list grid grid-cols-1 mt-10 gap-5 w-[90%] mx-auto md:gap-3 md:grid-cols-4 relative px-0">
 
               {ProductsList.map((item,index) => (
                  <ProductCard rate={item.rate} category={item.category} key={index} image={item.image} available={item.available} title={item.name} price={item.price} description={item.description}/> 
