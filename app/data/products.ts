@@ -7,7 +7,8 @@ interface ProductsListProps {
     price: string;
     image: StaticImageData;
     available: boolean;
-
+    category: string;
+    rate: string;
 }
 
 import ProductImage1 from "@/public/images/products/9ef8b49323e14bf089e669b60b389f77.jpg";
@@ -20,7 +21,9 @@ export const ProductsList: ProductsListProps[] = [
         description: "Modern smartphone with a crisp display, fast performance, and reliable battery life.",
         price: "1,950,000",
         image: ProductImage1,
-        available: true
+        available: true,
+        category: "Electronic",
+        rate: "4.0",
     },
     {
         id: 2,
@@ -28,7 +31,9 @@ export const ProductsList: ProductsListProps[] = [
         description: "Premium Apple handset with an advanced camera system and polished build quality.",
         image: ProductImage2,
         price: "2,300,000",
-        available: true
+        available: true,
+        category: "Electronic",
+        rate: "4.8",
     },
     {
         id: 3,
@@ -36,7 +41,9 @@ export const ProductsList: ProductsListProps[] = [
         description: "Designed for smooth multitasking with sharp visuals and an ergonomic feel.",
         image: ProductImage1,
         price: "1,950,000",
-        available: true
+        available: true,
+        category: "Electronic",
+        rate: "2.8",
     },
     {
         id: 4,
@@ -44,7 +51,9 @@ export const ProductsList: ProductsListProps[] = [
         description: "Compact and capable phone offering seamless performance and dependable everyday use.",
         image: ProductImage2,
         price: "2,300,000",
-        available: true
+        available: true,
+        category: "Electronic",
+        rate: "5.0",
     },
     {
         id: 5,
@@ -52,7 +61,9 @@ export const ProductsList: ProductsListProps[] = [
         description: "Feature-packed device with excellent camera clarity and responsive touch controls.",
         image: ProductImage1,
         price: "1,950,000",
-        available: true
+        available: true,
+        category: "Home",
+        rate: "4.4",
     },
     {
         id: 6,
@@ -60,6 +71,8 @@ export const ProductsList: ProductsListProps[] = [
         description: "Reliable smartphone choice with a vivid display and smooth performance for daily tasks.",
         image: ProductImage2,
         price: "2,300,000",
-        available: true
+        available: true,
+        category: "Electronic",
+        rate: "4.2",
     },
 ]

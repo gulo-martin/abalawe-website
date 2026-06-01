@@ -20,14 +20,14 @@ function page() {
               
               <div className="box shadow p-2 flex flex-row gap-2 items-center">Electronics <FcElectronics size={20}/></div>
               <div className="box shadow p-2 flex flex-row gap-2 items-center">shoes <GiSonicShoes size={20}/></div>
-              <div className="box shadow p-2 flex flex-row gap-2 items-center">Home materials <DiMaterializecss size={20}/></div>
+              <div className="box shadow p-2 flex flex-row gap-2 items-center">Home <DiMaterializecss size={20}/></div>
 
           </div>
 
           <div className="list grid grid-cols-1 mt-10 gap-10 w-[90%] mx-auto md:gap-3 md:grid-cols-4 relative px-0">
 
               {ProductsList.map((item,index) => (
-                 <ProductCard key={index} image={item.image} available={item.available} title={item.name} price={item.price} description={item.description}/> 
+                 <ProductCard rate={item.rate} category={item.category} key={index} image={item.image} available={item.available} title={item.name} price={item.price} description={item.description}/> 
 
               ))}
 
